@@ -1,4 +1,4 @@
-# WCAG EM TOOL DOCKER
+# WCAG EM REPORT TOOL DOCKER
 
 This makes use of Docker to create a container that will host the wcag-em Report Tool by the w3c.
 
