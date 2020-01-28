@@ -1,6 +1,6 @@
-# WCAG EM REPORT TOOL DOCKER
+# Docker Container for the WCAG-EM Report Tool
 
-This makes use of Docker to create a container that will host the [WCAG-EM Report tool](https://github.com/w3c/wcag-em-report-tool) by the W3C.
+This makes use of Docker to create a container that will host the [WCAG-EM Report Tool](https://github.com/w3c/wcag-em-report-tool) by the W3C.
 
 ## Installation
 
@@ -18,4 +18,4 @@ $ docker build -t wcag-em-report-tool .
 $ docker run wcag-em-report-tool -d
 ```
 
-This will give you a running instance of the [WCAG-EM Report tool](https://github.com/w3c/wcag-em-report-tool). You can connect via your favorite browser. The connection information is provided by the script.
+This will give you a running instance of the [WCAG-EM Report Tool](https://github.com/w3c/wcag-em-report-tool). You can connect via your favorite browser. The connection information is provided by the script.
