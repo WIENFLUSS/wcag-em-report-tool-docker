@@ -3,6 +3,7 @@ kind: Service
 metadata:
   annotations:
     kompose.cmd: /snap/kompose/1/./kompose-linux-amd64 --file docker-compose.yml convert
+      -c
     kompose.version: 1.18.0 (06a2e56)
   creationTimestamp: null
   labels:
