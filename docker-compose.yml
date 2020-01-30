@@ -1,0 +1,9 @@
+version: '3'
+services:
+  w3c-report-em-tool:
+    build: ./containers/tool
+    ports:
+      - "8089:9000"
+    restart: always
+volumes:
+  sock:
