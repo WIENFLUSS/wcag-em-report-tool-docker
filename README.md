@@ -19,3 +19,11 @@ $ docker run wcag-em-report-tool -d
 ```
 
 This will give you a running instance of the [WCAG-EM Report Tool](https://github.com/w3c/wcag-em-report-tool). You can connect via your favorite browser. The connection information is provided by the script.
+
+## Upgrade
+
+```bash
+### 0. Pull in the upstream changes from https://github.com/w3c/wcag-em-report-tool to https://github.com/WIENFLUSS/wcag-em-report-tool-docker.git
+
+### Execute Step 1-4 from the Installation Instructions
+```
