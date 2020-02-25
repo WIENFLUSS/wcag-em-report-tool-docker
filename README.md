@@ -23,7 +23,10 @@ This will give you a running instance of the [WCAG-EM Report Tool](https://githu
 ## Upgrade
 
 ```bash
-### 0. Pull in the upstream changes from https://github.com/w3c/wcag-em-report-tool to https://github.com/WIENFLUSS/wcag-em-report-tool-docker.git
+### Pull in the upstream changes from https://github.com/w3c/wcag-em-report-tool to https://github.com/WIENFLUSS/wcag-em-report-tool-docker.git
+### Remove the previous container:
+$ docker stop wcag-em-report-tool
+$ docker rm wcag-em-report-tool 
 
 ### Execute Step 1-4 from the Installation Instructions
 ```
