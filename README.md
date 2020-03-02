@@ -16,7 +16,7 @@ $ docker-compose up -d
 ```
 
 This will give you a running instance of the [WCAG-EM Report Tool](https://github.com/w3c/wcag-em-report-tool). You can connect via your favorite browser using the URL:
-`https://127.0.0.1:8089`
+`http://127.0.0.1:8089`
 
 ## Upgrade
 
