@@ -11,22 +11,26 @@ $ git clone https://github.com/WIENFLUSS/wcag-em-report-tool-docker.git
 ### 2. Change directory
 $ cd wcag-em-report-tool-docker/
 
-### 3. Build the dockerfile
-$ docker build -t wcag-em-report-tool .
-
-### 4. Run the container
-$ docker run wcag-em-report-tool -d
+### 3. Run the docker-compose setup
+$ docker-compose up -d
 ```
 
-This will give you a running instance of the [WCAG-EM Report Tool](https://github.com/w3c/wcag-em-report-tool). You can connect via your favorite browser. The connection information is provided by the script.
+This will give you a running instance of the [WCAG-EM Report Tool](https://github.com/w3c/wcag-em-report-tool). You can connect via your favorite browser using the URL:
+`https://127.0.0.1:8089`
 
 ## Upgrade
 
 ```bash
-### Pull in the upstream changes from https://github.com/w3c/wcag-em-report-tool to https://github.com/WIENFLUSS/wcag-em-report-tool-docker.git
-### Remove the previous container:
-$ docker stop wcag-em-report-tool
-$ docker rm wcag-em-report-tool 
-
-### Execute Step 1-4 from the Installation Instructions
+$ docker-compose down
+$ docker-compose build --no-cache
+$ docker-compose up -d
 ```
+
+## Debugging
+To get the container name/id you first type
+
+`$ docker ps`
+
+You can access the docker container via
+
+`$ docker exec -it <Containername or ID> /bin/bash`
