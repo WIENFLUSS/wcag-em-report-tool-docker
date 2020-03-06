@@ -6,11 +6,11 @@ MAINTAINER Christian Ebner <ebner@wienfluss.net>
 RUN gem install compass
 RUN npm install -g bower grunt http-server
 
-#COPY ./wcag-em-report-tool /tool
-#ADD ./wcag-em-report-tool ./tool
 RUN mkdir /tool
 
-RUN git clone https://github.com/wienfluss/wcag-em-report-tool.git /tool
+ARG GITURL="https://github.com/w3c/wcag-em-report-tool.git"
+
+RUN git clone $GITURL /tool
 
 WORKDIR /tool
 
