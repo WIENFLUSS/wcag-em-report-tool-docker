@@ -11,8 +11,11 @@ $ git clone https://github.com/WIENFLUSS/wcag-em-report-tool-docker.git
 ### 2. Change directory
 $ cd wcag-em-report-tool-docker/
 
-### 3. Build the docker-compose setup
-$ docker-compose build ### Here you can supply additional commands such as your own repository for testing via the build-args argument: --build-arg GITURL="<INSERT REPOSITORY URL HERE>" w3c-report-em-tool
+### 3. Build the docker-compose setup and the official WCAG-EM repository
+$ docker-compose build
+
+# Note: To use an alternative WCAG-EM repository, the GITURL argument must be set accordingly
+$ docker-compose build --build-arg GITURL="https://github.com/<USERHOME>/wcag-em-report-tool-docker.git" w3c-report-em-tool
 
 ### 4. Run the docker-compose setup
 $ docker-compose up -d
